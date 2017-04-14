@@ -1,6 +1,6 @@
 # redux-form-field
 Easy way to create fields to form for validations, warnings etc...<br>
-based on <a href="http://redux-   form.com/6.6.3/" target="_blank">redux-form</a>
+based on <a href="http://redux-form.com/6.6.3/" target="_blank">redux-form</a>
 
 ## Quick start
 
@@ -59,7 +59,8 @@ Return your connected component to `redux` and `redux-form`
 This example show you how to create component and convert it to Field that can be easly to use inside forms to validations, warnings etc...
 as you can see inside the `props` that send to your component you can find `meta` and `input` data.
 
-1. `meta` - include the error/warning message and if field is touched. You can figure out more props on <a href="http://redux-   form.com/6.6.3/" target="_blank">redux-form</a> documentation.
+1. `meta` - include the error/warning message and if field is touched. You can figure out more props on 
+<a href="http://redux-form.com/6.6.3/" target="_blank">redux-form</a> documentation.
 2. `input` - here you get all the inputs props. for example : onChange, name etc ..
   This field make your component like a 'real' input, you can now pass any props that input have and it will auto combine it to the 'real' input inside your component.
 
