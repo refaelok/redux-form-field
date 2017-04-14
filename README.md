@@ -1,2 +1,2 @@
 # redux-form-field
-easy to create fields and connect to redux-form
+Easy way to create fields to form for validations, warnings etc...
