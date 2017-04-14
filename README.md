@@ -1,17 +1,17 @@
 # redux-form-field
 Easy way to create fields to form for validations, warnings etc...
 
-### Methods
+## Methods
 
-#### `createField`
-* ##### Parameters :
+* #### `createField`
+##### Parameters :
 1. `component` - the component you created
 2. `propTypes [OPTIONAL]` - propTypes that will be combined to the returned component.
 
 ##### Return :
 Return `redux-form Field` component that can be use easly inside forms.
 
-#### `connectWithReduxForm`
+* #### `connectWithReduxForm`
 ##### Parameters :
 1. `component (container)` - the component you want to connect to `redux-form`.
 2. `mapStateToProps [OPTIONAL]` - states you want to connect to `redux`.
@@ -22,9 +22,9 @@ Return `redux-form Field` component that can be use easly inside forms.
 Return your connected component to `redux` and `redux-form`
 
 
-### Usage
+## Usage
 
-#### `createField` Example Code
+* #### `createField` Example Code
 This example show you how to create component and convert it to Field that can be easly to use inside forms to validations, warnings etc...
 as you can see inside the `props` that send to your component you can find `meta` and `input` data.
 
@@ -57,7 +57,7 @@ export default createField(component, {
 });
 ```
 
-#### `connectWithReduxForm` Example Code documentation
+* #### `connectWithReduxForm` Example Code documentation
 
 ```JSX
 import React, { Component } from 'react';
