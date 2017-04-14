@@ -1,22 +1,53 @@
 # redux-form-field
-Easy way to create fields to form for validations, warnings etc...
+Easy way to create fields to form for validations, warnings etc...<br>
+based on <a href="http://redux-   form.com/6.6.3/" target="_blank">redux-form</a>
+
+## Quick start
+
+install
+```
+$ npm install --save redux-form-field
+```
+convert your component to field component
+```JSX
+export default createField(MyFieldComponent, {
+    nyField_1: PropTypes.string.isRequired,
+    nyField_2: PropTypes.string.isRequired
+});
+```
+connect your Form Container to `redux-form`
+```JSX
+export default connectWithReduxForm(MyFormContainer,
+    {
+        myStates
+    },
+    {
+        myActions
+    },
+    {
+        form : 'MyFormContainerForm',
+        fields: ['MyFieldComponent'],
+        myValidateFunction
+    }
+);
+```
 
 ## Methods
 
 * #### `createField`
 ##### Parameters :
-1. `component` - the component you created
-2. `propTypes [OPTIONAL]` - propTypes that will be combined to the returned component.
+* `component` - the component you created
+* `propTypes [OPTIONAL]` - propTypes that will be combined to the returned component.
 
 ##### Return :
 Return `redux-form Field` component that can be use easly inside forms.
 
 * #### `connectWithReduxForm`
 ##### Parameters :
-1. `component (container)` - the component you want to connect to `redux-form`.
-2. `mapStateToProps [OPTIONAL]` - states you want to connect to `redux`.
-3. `mapDispatchToProps [OPTIONAL]` - actions you want to connect to `redux`.
-4. `reduxFormConfig` - `redux-form` configuration.
+* `component (container)` - the component you want to connect to `redux-form`.
+* `mapStateToProps [OPTIONAL]` - states you want to connect to `redux`.
+* `mapDispatchToProps [OPTIONAL]` - actions you want to connect to `redux`.
+* `reduxFormConfig` - `redux-form` configuration.
 
 ##### Return :
 Return your connected component to `redux` and `redux-form`
