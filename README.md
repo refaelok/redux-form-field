@@ -88,7 +88,10 @@ export default createField(component, {
 });
 ```
 
-* #### `connectWithReduxForm` Example Code documentation
+* #### `connectWithReduxForm` Example Code
+This example show how to use your `redux-form-field` inside Form Container
+and how to connect him to `redux-form`.
+Input and Textarea are `redux-form-field`.
 
 ```JSX
 import React, { Component } from 'react';
@@ -99,7 +102,7 @@ import { Input, Textarea } from '../../components/core';
 
 class PostsNew extends Component {
     onChg () {
-        console.log("aaaa");
+        console.log("Hello redux-form-field");
     }
 
     render() {
