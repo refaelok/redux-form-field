@@ -4,7 +4,7 @@ Easy way to create fields to form for validations, warnings etc...
 ### Methods
 
 #### `createField`
-##### Parameters :
+* ##### Parameters :
 1. `component` - the component you created
 2. `propTypes [OPTIONAL]` - propTypes that will be combined to the returned component.
 
@@ -57,7 +57,7 @@ export default createField(component, {
 });
 ```
 
-#### `connectWithReduxForm` Example Code` documentation
+#### `connectWithReduxForm` Example Code documentation
 
 ```JSX
 import React, { Component } from 'react';
