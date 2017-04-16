@@ -18,6 +18,20 @@ install
 ```
 $ npm install --save redux-form-field
 ```
+
+Add `form` to your redux. for example:
+```JS
+import { combineReducers } from 'redux';
+import { reducer as formReducer } from 'redux-form';
+
+const rootReducer = combineReducers({
+    form: formReducer,
+});
+
+export default rootReducer;
+```
+
+
 Convert your component to Field Component with `createField`
 ```JS
 export default createField(MyFieldComponent, {
