@@ -1,6 +1,6 @@
 {
   "name": "redux-form-field",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Easy way to create fields to form for validations, warnings etc...",
   "main": "./dist/index.js",
   "scripts": {

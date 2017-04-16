@@ -19,7 +19,7 @@ install
 $ npm install --save redux-form-field
 ```
 Convert your component to Field Component with `createField`
-```JSX
+```JS
 export default createField(MyFieldComponent, {
     nyField_1: PropTypes.string.isRequired,
     nyField_2: PropTypes.string.isRequired
@@ -78,7 +78,7 @@ as you can see inside the `props` that send to your component you can find `meta
 2) `input` - here you get all the inputs props. for example : onChange, name etc ..
   This field make your component like a 'real' input, you can now pass any props that input have and it will auto combine it to the 'real' input inside your component.
 
-```JSX
+```JS
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { createField } from 'redux-form-field';
@@ -108,7 +108,7 @@ This example show how to use your `redux-form-field` inside Form Container
 and how to connect him to `redux-form`.
 Input and Textarea are `redux-form-field`.
 
-```JSX
+```JS
 import React, { Component } from 'react';
 import { connectWithReduxForm } from 'redux-form-field';
 import { createPost } from '../../actions/posts/actions_posts';
