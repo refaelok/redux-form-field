@@ -54,7 +54,7 @@ export default connectWithReduxForm(MyFormContainer,
 ##### Return :
 Return `redux-form Field` component that can be use easly inside forms.
 
-<br/><br/>
+<br/>
 
 ### `connectWithReduxForm`
 ##### Parameters :
