@@ -1,6 +1,6 @@
 {
   "name": "redux-form-field",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Easy way to create fields to form for validations, warnings etc...",
   "main": "./dist/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/refaelok/redux-form-field.git"
   },
   "keywords": [
-    "redux-form"
+    "react", "react-dom", "redux", "react-redux", "redux-form"
   ],
   "author": "Rafael Oknin <refaeloknin@gmail.com>",
   "license": "ISC",
